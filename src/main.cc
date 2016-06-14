@@ -10,7 +10,8 @@
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
- * The above copyright notice and this permission notice shall be included in all
+ * The above copyright notice and this permission notice shall be included in
+ *all
  * copies or substantial portions of the Software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -24,16 +25,20 @@
  **/
 #include <cstdio>
 
+#include "argcv/ir/index/analyzer/basic_cn_analyzer.hh"
 #include "argcv/string/string.hh"
 
 using namespace argcv::string;
+using namespace argcv::ir::index::analyzer;
 
 int main(int argc, char* argv[]) {
-    printf("Hello, World!\n");
-    std::string s("abc def  ghi");
-    auto v = split(s, " ",false);
-    for (auto ev : v) {
-        printf("%s\n", ev.c_str());
-    }
-    return 0;
+  std::string te("红糖姜茶黑糖姜茶生姜速溶姜汁红糖");
+
+  printf("Hello, World!\n");
+  std::string s("abc def  ghi");
+  auto v = split(s, " ", false);
+  for (auto ev : v) {
+    printf("%s\n", ev.c_str());
+  }
+  return 0;
 }
